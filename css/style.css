@@ -1,0 +1,76 @@
+body{
+    font-family: 'Macondo', cursive;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -180px;
+    width: 25%;
+}
+
+#one {
+    width: 1360px;
+    height: 662px;
+    background-size: cover;
+}
+
+#two {
+    width: 1366px;
+    height: 662px;
+    background-size: cover;
+}
+
+#three{
+    width: 1366px;
+    height: 662px;
+    background-size: cover;
+}
+
+.centertwo { 
+   position: absolute; 
+   top:250%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -180px;
+    width: 25%;
+}
+
+.centerthree{
+    position: absolute;
+    top:32%;
+    left: 21%;
+/*    left: 15%;*/
+    
+}
+
+h1{
+    color: #fff;
+}
+
+#image1{
+
+    background: no-repeat center center fixed;
+    background-size: cover;
+}
+
+.box{
+    font-size: 70px;
+    color: #fff;
+}
+
+.welcome a{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.welcome h6{
+    font-size: 20px;
+}

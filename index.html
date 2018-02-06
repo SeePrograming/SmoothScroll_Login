@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scroll Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+     
+    <link rel="stylesheet" href="dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   
+
+<!--    <a href="#signup"><button class="btn btn-primary">Scroll</button></a>-->
+    
+    <div id="wel" class="welcome">
+        <img id="three" src="images/3.jpeg" alt="wel">
+        <div class="centerthree">
+           <div class="box">
+            <p id="p1">Welcome To SeeProgramming</p>
+            <div class="row" style="margin-top: 200px;">
+           <a id="a1" href="#login"> <h6 style="margin-left: 100px;">Login <i class="fa fa-sign-in" aria-hidden="true"></i></h6> </a> 
+           <a id="a2" href="#signup"><h6 style="margin-left: 500px;">Sign-Up <i class="fa fa-user-plus" aria-hidden="true"></i></h6></a>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+    
+
+       <div id="login" class="image">
+         
+          
+           <img id="one" src="images/1.jpeg" alt="">
+           <div class="text-center center">
+                <form class="martop-100px" data-aos="zoom-in">
+                    <div class="from-group">
+                        <img id="image1" src="images/logo.png" alt="user">
+                        <div class="row">
+                            <input type="email" class="form-control size" placeholder="Enter email">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input type="password" class="form-control size" placeholder="Enter password">
+                        </div>
+                        <br>
+                         
+                        <input type="submit" class="btn btn-danger btn-block size" value="LOGIN" />
+                        <h5 style="margin-top: 120px;">Don't have an account ?</h5>
+                       <a href="#signup"><h3 class="animated infinite bounce" style="margin-top: 19px;"><i class="fa fa-angle-double-down" aria-hidden="true"></i></h3></a>
+
+                    </div>
+                </form>
+            </div>
+           
+       </div>
+       
+       
+       
+       
+       <div id="signup" class="two">
+           <img id="two" src="images/2.jpeg" alt="">
+            <div class="text-center centertwo">
+                <form class="martop-100px" data-aos="flip-up">
+                    <div class="from-group">
+                        <img id="image2" src="images/logo.png" alt="user">
+                        <div class="row">
+                            <input type="text" class="form-control size" placeholder="Enter name">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input type="email" class="form-control size" placeholder="Enter email">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input type="number" class="form-control size" placeholder="Enter contact number">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input type="password" class="form-control size" placeholder="Enter password">
+                        </div>
+                        <br>
+
+                        <input type="submit" class="btn btn-danger btn-block size" value="SIGNUP" />
+                        
+                 
+                    </div>
+                </form>
+                 <a href="#wel"><h5 class="animated infinite bounce" style="margin-left: 719px; margin-top: 80px;"><i class="fa fa-angle-double-up" aria-hidden="true"></i></h5></a>
+            </div>
+            
+       </div>
+
+
+
+    <!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
+
+    <script>
+        AOS.init({
+              offset: 400,
+              duration: 600
+            
+        });
+    </script>
+    
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('#p1',{
+            duration:2000,
+            origin:'top',
+            distance:'300px'
+            
+        });
+        
+         sr.reveal('#a1',{
+            duration:2000,
+            origin:'left',
+            distance:'300px',
+             delay:'1000'
+            
+        });
+        
+         sr.reveal('#a2',{
+            duration:2000,
+            origin:'right',
+            distance:'300px',
+             delay:'1000'
+            
+        });
+    </script>
+
+    <script>
+        $(function() {
+            // Smooth Scrolling
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
